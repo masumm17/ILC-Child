@@ -22,12 +22,22 @@
 		<div class="subfooterline-inner">
 			<div class="fixw">
 				<div class="subfooter-copy">
-					<p>
-						<?php echo get_option(OM_THEME_PREFIX."footer_text"); ?>
-					</p>
+					<?php if ( has_nav_menu( 'footer_nav' ) ) { ?>
+					<div class="subfooter-menu">
+						<?php
+						wp_nav_menu( array(
+							'theme_location' => 'footer_nav',
+							'container' => false,
+							'menu_class' => 'footer_nav'
+						) );
+						?>
+					</div>
+					<?php }?>
+					<p>The EASL Building – Home of Hepatology <br/>Rue Daubin 7 / CH-1203 Geneva, Switzerland</p>
 				</div>
 				<div class="subfooter-social">
-					
+					<p><?php echo get_option(OM_THEME_PREFIX."footer_text"); ?></p>
+					<p class="footer-logo"><img alt="" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-footer.png" /></p>
 				</div>
 				<div class="clear">&nbsp;</div>
 			</div>

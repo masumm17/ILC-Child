@@ -16,7 +16,14 @@
 		
 	<?php wp_head(); ?>
 
-	<?php echo get_option( OM_THEME_PREFIX . 'code_before_head' ) ?>
+	<?php echo get_option( OM_THEME_PREFIX . 'code_before_head' ); ?>
+	<!--[if gte IE 9]>
+	<style type="text/css">
+	  .cbutton-golden {
+		 filter: none;
+	  }
+	</style>
+  <![endif]-->
 </head>
 <body <?php body_class(  ); ?>>
 	<!-- Head Line: Header, Countdown -->
@@ -37,7 +44,7 @@
 						}
 						?>
 					</div>
-					<div class="headline-right">
+					<div class="headline-right social-icons-con">
 						<p class="social-icons-wrap">
 							<?php if( $icon = get_option(OM_THEME_PREFIX."social_twitter") ) { ?>
 								<a href="<?php echo $icon?>" class="social twitter"></a>
@@ -85,9 +92,20 @@
 								<a href="<?php echo $icon?>" class="social youtube"></a>
 							<?php } ?>
 						</p>
+						<a href="" title="Become an EASL Member." class="become-member-button cbutton-golden">BECOME AN EASL MEMBER</a>
+					</div>
+					<div class="clear seperator-121">&nbsp;</div>
+					<div class="headline-left congress-logo">
+						<?php echo get_option(OM_THEME_PREFIX . 'location_date') ?>
+					</div>
+					<div class="headline-right ilc-count-down">
+						<!-- Countdown -->
+						<div class="countdown">
+							<div id="countdown"<?php if(get_option(OM_THEME_PREFIX . 'countdown_hide_seconds') == 'true') echo ' data-hideseconds="true"' ?> data-days="<?php _e('days','om_theme') ?>" data-hrs="<?php _e('hrs','om_theme') ?>" data-min="<?php _e('min','om_theme') ?>" data-sec="<?php _e('sec','om_theme') ?>" data-label="<?php _e('time left','om_theme') ?>"><?php echo get_option(OM_THEME_PREFIX . 'countdown_date') ?><!--UNTIL TIME, FORMAT YYYY-MM-DD HH:MM:SS--></div>
+						</div>
+						<!-- /Countdown -->
 					</div>
 					<div class="clear">&nbsp;</div>
-
 				</div>
 			</div>
 		</div>
@@ -135,7 +153,7 @@
 						$special_button=get_option(OM_THEME_PREFIX.'special_button_title');
 						if($special_button) {
 							$special_button_link=get_option(OM_THEME_PREFIX.'special_button_link');
-							echo '<a href="'.$special_button_link.'" class="menu-special-button">'.$special_button.'</a>';
+							echo '<a href="'.$special_button_link.'" class="cbutton-golden menu-special-button">'.$special_button.'</a>';
 						}
 												
 					?>

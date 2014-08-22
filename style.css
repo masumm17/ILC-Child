@@ -36,7 +36,6 @@ body{
     margin: 0 0 8px;
     opacity: 1;
 }
-.social:hover{opacity:.6;}
 .logo-image {
     left: -78px;
     position: relative;
@@ -49,4 +48,153 @@ body{
 
 .container-col-full-width {
     padding: 0 20px;
+}
+.menu-pane{
+    margin: 20px 0;
+}
+
+body .cbutton-golden {
+    border: 1px solid #8d7358;
+    border-radius: 3px;
+    text-decoration: none;
+    
+    background: #8d7358; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzhkNzM1OCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ3JSIgc3RvcC1jb2xvcj0iI2I5OGY0MiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUzJSIgc3RvcC1jb2xvcj0iI2I5OGY0MiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM4ZDczNTgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #8d7358 0%, #b98f42 47%, #b98f42 53%, #8d7358 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8d7358), color-stop(47%,#b98f42), color-stop(53%,#b98f42), color-stop(100%,#8d7358)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #8d7358 0%,#b98f42 47%,#b98f42 53%,#8d7358 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #8d7358 0%,#b98f42 47%,#b98f42 53%,#8d7358 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #8d7358 0%,#b98f42 47%,#b98f42 53%,#8d7358 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #8d7358 0%,#b98f42 47%,#b98f42 53%,#8d7358 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8d7358', endColorstr='#8d7358',GradientType=0 ); /* IE6-8 */
+
+}
+body .cbutton-golden:hover {
+    background: #997d5e; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzk5N2Q1ZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ3JSIgc3RvcC1jb2xvcj0iI2Q0YWYzZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ3JSIgc3RvcC1jb2xvcj0iI2Q0YWYzZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUzJSIgc3RvcC1jb2xvcj0iI2Q0YWYzZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM5OTdkNWUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #997d5e 0%, #d4af3d 47%, #d4af3d 47%, #d4af3d 53%, #997d5e 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#997d5e), color-stop(47%,#d4af3d), color-stop(47%,#d4af3d), color-stop(53%,#d4af3d), color-stop(100%,#997d5e)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #997d5e 0%,#d4af3d 47%,#d4af3d 47%,#d4af3d 53%,#997d5e 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #997d5e 0%,#d4af3d 47%,#d4af3d 47%,#d4af3d 53%,#997d5e 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #997d5e 0%,#d4af3d 47%,#d4af3d 47%,#d4af3d 53%,#997d5e 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #997d5e 0%,#d4af3d 47%,#d4af3d 47%,#d4af3d 53%,#997d5e 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#997d5e', endColorstr='#997d5e',GradientType=0 ); /* IE6-8 */
+}
+.become-member-button{
+	display:inline-block;
+	margin:3px;
+	line-height:40px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	padding:0 40px;
+	font-size:16px;
+	cursor:pointer;
+	text-decoration:none;
+	color:#fff;
+	text-shadow:0 -1px 0 rgba(0,0,0,0.3);
+        text-decoration: none;
+}
+.become-member-button:hover{
+    text-decoration: none;
+}
+.headline-left{padding-bottom:20px;}
+.headline-right.no-seconds.social-icons-con{
+	width:335px;
+}
+.headline-right.ilc-count-down{
+    padding: 19px 0 20px;
+}
+.headline-left.congress-logo{
+    padding: 8px 0 15px;
+}
+.countdown{margin:0;}
+.congress-logo img{
+    width: 95%;
+    max-width: 526px;
+}
+.seperator-121{
+    height: 2px;
+    background: #8cd2f5;
+    border: 1px solid #ebf7fd;
+}
+.countdown-box{border-color: #e1ecf4;}
+.countdown-box .field
+{
+    float:left;
+    width:76px;
+    height:78px;
+    background:#f8f8f8 url('img/countdown-bg.jpg') no-repeat right bottom;
+    position:relative;
+    overflow:hidden;
+}
+.countdown-box .field .value{
+    color: #0043d8;
+}
+
+.subfooterline {
+    color: #666;
+    font-size: 14px;
+}
+.subfooterline-inner .fixw {
+  border-top: 3px solid #85cff4;
+  padding-top: 12px;
+}
+.subfooter-copy{
+    opacity:1;
+}
+.subfooter-menu{}
+.subfooter-menu ul{
+    list-style: none outside none;
+    margin: 0 0 0 10px;
+    padding: 0;
+}
+.subfooter-menu ul li{
+    border-right: 1px solid #005c9f;
+    display: inline;
+    padding-right: 4px;
+}
+.subfooter-menu ul li:last-child{
+    border-right: 0 none;
+    padding-right:0;
+}
+.subfooterline a{
+    color: #005c9f;
+    text-decoration: none;
+}
+.subfooter-copy p {
+    margin: 7px 0;
+}
+
+.home .footer {
+  display: none;
+}
+.subfooter-copy {
+    width: 670px;
+}
+.subfooter-social{
+    float: right;
+    width: 250px;
+}
+.subfooter-social > p {
+    margin: 0 0 10px;
+    padding: 0;
+}
+@media only screen and (max-width: 989px){}
+@media only screen and (min-width: 768px) and (max-width: 979px){
+    .headline-right.no-seconds.social-icons-con{
+	width:290px;
+    }
+    .subfooterline{font-size: 13px;}
+    .subfooter-social{
+        width: 240px;
+    }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px){
+    
+}
+@media only screen and (max-width: 479px){
+    
 }
