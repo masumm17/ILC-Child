@@ -1,0 +1,52 @@
+/*
+Theme Name: Expo18 Child Theme
+Template: expo18
+*/
+@import url("../expo18/style.css");
+
+/* Below you can write your style */
+
+body{
+    background: #fff!important;
+}
+.a-bg-l1,
+.container-wrapper,
+.a-bg-l2,
+.headline-inner,
+.subfooterline-inner{
+    background: transparent!important;
+}
+.headline:after{
+    background: transparent!important;
+}
+
+.container:before,
+.container:after,
+.subfooterline{
+    box-shadow: none!important;
+}
+.container{
+    border-radius: 0!important;
+}
+
+.primary-menu li{margin: 0 5px 0 0;}
+.primary-menu li a{padding: 0 7px;text-transform: uppercase;}
+
+.social {
+    margin: 0 0 8px;
+    opacity: 1;
+}
+.social:hover{opacity:.6;}
+.logo-image {
+    left: -78px;
+    position: relative;
+}
+.social-icons-wrap{
+    margin: 0;
+    padding-top: 45px;
+    position: relative;
+}
+
+.container-col-full-width {
+    padding: 0 20px;
+}
