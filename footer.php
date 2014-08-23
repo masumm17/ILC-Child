@@ -33,7 +33,7 @@
 						?>
 					</div>
 					<?php }?>
-					<p>The EASL Building – Home of Hepatology <br/>Rue Daubin 7 / CH-1203 Geneva, Switzerland</p>
+					<p><?php echo get_option(OM_THEME_PREFIX."footer_address"); ?></p>
 				</div>
 				<div class="subfooter-social">
 					<p><?php echo get_option(OM_THEME_PREFIX."footer_text"); ?></p>

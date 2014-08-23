@@ -92,7 +92,7 @@
 								<a href="<?php echo $icon?>" class="social youtube"></a>
 							<?php } ?>
 						</p>
-						<a href="" title="Become an EASL Member." class="become-member-button cbutton-golden">BECOME AN EASL MEMBER</a>
+						<?php if(get_option(OM_THEME_PREFIX . 'special_button_hrt')){ ?><a href="<?php echo get_option(OM_THEME_PREFIX . 'special_button_hrt_link'); ?>" title="Become an EASL Member." class="become-member-button cbutton-golden"><?php echo get_option(OM_THEME_PREFIX . 'special_button_hrt'); ?></a><?php }?>
 					</div>
 					<div class="clear seperator-121">&nbsp;</div>
 					<div class="headline-left congress-logo">
