@@ -230,6 +230,44 @@ body .binfopane-button .inner{
     height:340px;
 }
 
+.latest-congress-news .lcn-title, .ilc-h2 {
+    background: transparent;
+    border-bottom: 4px solid #f0f0f2;
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+.lcn-news h2{
+    background: transparent;
+    font-size: 18px;
+    padding: 0;
+    margin: 0 0 5px;
+    line-height: 24px;
+}
+.lcn-news article {
+    margin: 0 0 30px;
+}
+.lcn-news p{
+    font-size: 14px;
+    color: #666;
+    line-height: 20px;
+    margin: 0;
+}
+.lcn-news p.lcn-news-data {
+    background: none repeat scroll 0 0 #f1f1f1;
+    display: inline-block;
+    padding: 4px;
+    margin-bottom: 10px;
+}
+.lcn-news p.lcn-news-data span {
+    background: none repeat scroll 0 0 #d6d6d6;
+    border-top: 1px solid #ddd;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 3px 9px;
+    border-bottom: 1px solid #c2c2c2;
+    color: #fff;
+}
+
 @media only screen and (max-width: 989px){}
 @media only screen and (min-width: 768px) and (max-width: 979px){
     .headline-right.no-seconds.social-icons-con{

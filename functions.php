@@ -3,7 +3,7 @@
 register_nav_menu('footer_nav', 'Footer navigation Menu');
 require_once (get_stylesheet_directory() . '/functions/theme-options.php');
 
-add_shortcode('one_half', 'om_sc_one_half', 'ilc_latest_congress_news num');
+add_shortcode('ilc_latest_congress_news', 'ilc_latest_congress_news');
 function ilc_latest_congress_news($atts){
 	extract(shortcode_atts(array(
 		'title'    	 => 'Latest Congress News',
@@ -21,13 +21,14 @@ function ilc_latest_congress_news($atts){
 	<div class="lcn-news">
 		<?php foreach($all_news as $news){ ?>
 		<article class="lcn-<?php echo $news->ID; ?>">
+			<p class="lcn-news-data"><span><?php echo get_the_date('F j, Y'); ?></span></p>
 			<h2><a href="<?php echo get_permalink($news->ID); ?>" title="<?php echo esc_attr(  get_the_title($news->ID)); ?>"><?php echo get_the_title($news->ID); ?></a></h2>
 			<p>
 				<?php 
 				if(  has_excerpt( $news->ID)) {
-					echo ilc_truncate($news->post_excerpt);
+					echo ilc_truncate($news->post_excerpt, 120);
 				}else{
-					echo ilc_truncate($news->post_content);
+					echo ilc_truncate($news->post_content, 120);
 				}
 				?>
 			</p>
