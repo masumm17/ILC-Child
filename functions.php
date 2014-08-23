@@ -22,17 +22,28 @@ function ilc_latest_congress_news($atts){
 		<?php foreach($all_news as $news){ ?>
 		<article class="lcn-<?php echo $news->ID; ?>">
 			<h2><a href="<?php echo get_permalink($news->ID); ?>" title="<?php echo esc_attr(  get_the_title($news->ID)); ?>"><?php echo get_the_title($news->ID); ?></a></h2>
-			<p></p>
+			<p>
+				<?php 
+				if(  has_excerpt( $news->ID)) {
+					echo ilc_truncate($news->post_excerpt);
+				}else{
+					echo ilc_truncate($news->post_content);
+				}
+				?>
+			</p>
 		</article>
 		<?php } ?>
 	</div>
 </div>
 
 <?php
+		return trim(ob_get_clean());
 	}
+	ob_get_clean();
+	return '';
 }
 
-function ep_truncate($str, $len=200, $trail='', $word_wrap=true){
+function ilc_truncate($str, $len=200, $trail='', $word_wrap=true){
 	// Strip all html tags
 	$str = strip_tags($str);
 	// Strip Shortcodes
